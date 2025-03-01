@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import mongooseAggregatePaginate from "mongoose-aggregate-paginate-v2";
-const videoSchema = new mongoose.Schema({
-    videoFile: {
+const forecastSchema = new mongoose.Schema({
+    location_Id: {
         type : String,
         required : true,
     },
@@ -39,4 +39,4 @@ const videoSchema = new mongoose.Schema({
 {
     timestamps: true,
 })
-export const video = mongoose.model("video",videoSchema)
+export const forecast = mongoose.model("video",forecastSchema)
