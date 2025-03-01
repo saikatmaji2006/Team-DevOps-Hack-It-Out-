@@ -116,5 +116,64 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+# Solidity
+.openzeppelin/
+deployments/
+
+# Blockchain
+.secret
+mnemonic.txt
+private-key.txt
+
+# Debug
+.debug/
+debug.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Production
+.production/
+build/
+dist/
+
+# Misc
+.DS_Store
+*.pem
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Hardhat
+cache/
+artifacts/
+typechain/
+typechain-types/
+coverage/
+coverage.json
+
+# Testing
+coverage/
+.nyc_output/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+.directory
+
+# Logs
+logs/
+*.log
+
+# Build outputs
+dist/
+build/
+out/
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Node

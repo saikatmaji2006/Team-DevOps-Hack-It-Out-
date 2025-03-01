@@ -1,28 +1,40 @@
 {
-  "name": "hack-it-out-backend",
+  "name": "backend",
   "version": "1.0.0",
+  "description": "P.S: AI-Powered Renewable Energy Forecasting (By NTPC)\r Background:\r  Renewable energy sources like solar and wind are highly unpredictable due to their \r dependence on weather conditions. This unpredictability can cause fluctuations in energy \r generation, leading to challenges in balancing power supply and demand. Effective \r forecasting is crucial for energy grid stability, reducing reliance on fossil fuel-based backup \r power.\r  Problem Statement:\r  Develop a web-based AI-powered forecasting system that predicts solar and wind energy \r generation using historical weather data such as sunlight intensity, wind speed, and \r temperature. The system should provide real-time insights to energy companies, grid \r operators, and businesses, helping them optimize energy planning, reduce power \r shortages, and improve sustainability.\r  Expected Features\r  Web Dashboard: A user-friendly interface displaying energy generation forecasts with \r interactive charts and analytics\r  AI-Powered Predictions: Uses past weather patterns and machine learning models to \r predict future solar and wind energy output\r  Real-Time Data Integration: Fetches live weather data from APIs for continuous updates\r  Geographical Adaptability: Supports different locations by customizing predictions \r based on local weather conditions\r  Accuracy Optimization: Reduces the gap between forecasted and actual power \r generation using advanced models and error correction techniques\r  API for Integration: Allows energy companies to integrate forecasts into their existing \r energy management systems.",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
-  "author": "Saikat Maji",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sagexd08/HackQuest--EduQuest.git"
+  },
+  "author": "",
   "license": "ISC",
-  "description": "",
+  "bugs": {
+    "url": "https://github.com/Sagexd08/HackQuest--EduQuest/issues"
+  },
+  "homepage": "https://github.com/Sagexd08/HackQuest--EduQuest#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
     "cloudinary": "^2.5.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
     "express": "^4.21.2",
+    "hardhat": "^2.22.19",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.13.1",
-    "mongoose": "^8.11.0",
+    "mongoose": "^8.12.1",
     "mongoose-aggregate-paginate-v2": "^1.1.4",
     "multer": "^1.4.5-lts.1",
-    "node-geocoder": "^4.4.1"
+    "node-geocoder": "^4.4.1",
+    "web3": "^4.16.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9",

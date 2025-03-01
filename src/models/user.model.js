@@ -20,10 +20,71 @@ const userSchema = new mongoose.Schema({
         
 
     },
+    linkedIn : {
+        type : String,
+        // required : true,
+        unique : true,
+        trim : true,
+        
+
+    },
+    gitHUb : {
+        type : String,
+        required : true,
+        unique : true,
+        
+        trim : true,
+        
+
+    },
+    x : {
+        type : String,
+        // required : true,
+        unique : true,
+        trim : true,
+        
+
+    },country : {
+        type : String,
+        required : true,
+        unique : true,
+        lowercase : true,
+        trim : true,
+        
+
+    },
+    
+    reputationRanking : {
+        type : Number,
+        //required : true,
+        unique : true,
+        lowercase : true,
+        trim : true,
+        
+
+    },
+    day : {
+        type : Number,
+        //required : true,
+        unique : true,
+        lowercase : true,
+        trim : true,
+        
+
+    },
+    leetCode : {
+        type : String,
+        required : true,
+        unique : true,
+        
+        trim : true,
+        
+
+    },
     fullName : {
         type : String,
         required : true,
-        trim : true,
+        trim : true,//linked github x country reputationranking day nft-points
         index: true,
 
     },
@@ -34,12 +95,7 @@ const userSchema = new mongoose.Schema({
     coverImage : {
         type : String,
     },
-    watchHistory : [{
-        type : mongoose.Schema.ObjectId,
-        ref : "video"
-
-
-    }],
+    
     password : {
         type : String,
         required : [true,"the password is required"]

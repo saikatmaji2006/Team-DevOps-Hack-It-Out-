@@ -1,6 +1,7 @@
 import dotenv from "dotenv"
 import express from "express";
 import { app } from "./app.js";
+import { ethers } from "ethers";
 dotenv.config({
     path: './.env'
 })
